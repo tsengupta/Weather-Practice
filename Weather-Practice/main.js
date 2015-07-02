@@ -1,11 +1,30 @@
 ﻿$(document).ready(function () {
-    var weatherData = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=Nashville&mode=json&units=metric&cnt=7';
+    var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?q=Nashville,us';
 
-    $.get(weatherData, function (data) {
+    $.get(weatherURL, function (data) {
         console.log(data);
-        for (var i = 0; i < data.list.length; i++) {
-            var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            $("#weather").append("The weather for " + day[i] + " is " + data.list[i].weather[0].description + ". ");
+        var weatherCondition = data.weather[0].id;
+
+        if (weatherCondition < 233) {
+            $("#weather-id").text("Thunderstorm");
         }
-    }
-)});
+        else if (weatherCondition < 322) {
+            $("#weather-id").text("Drizzle");
+        }
+        else if (weatherCondition < 532) {
+            $("#weather-id").text("Rain");
+        }
+        else if (weatherCondition < 623) {
+            $("#weather-id").text("Snow");
+        }
+        else if (weatherCondition < 782) {
+            $("#weather-id").text("Atmospheric Covering");
+        }
+        else if (weatherCondition < 805) {
+            $("#weather-id").text("Cloudy");
+        }
+    });
+    
+
+
+});

@@ -1,0 +1,34 @@
+﻿body{
+    background-image: url(http://hdw.datawallpaper.com/architecture/nashville-tennessee-desktop-background-492470.jpg);
+}
+div{
+    border-radius: 5px;
+}
+#heading{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d8e0ee;
+    font-size: 40px;
+    background-color: rgba(79, 68, 68, 0.50);
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 5px;
+}
+.main-weather{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d8e0ee;
+    background-color: rgba(79, 68, 68, 0.50);
+    height: 600px;
+    width: 700px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 5px;
+}
+.day {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    display: inline-block;
+    margin: 10px;
+}
