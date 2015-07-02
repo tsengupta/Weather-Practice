@@ -96,5 +96,21 @@
         };
         var wString = weatherDictionary[weatherCondition];
         $("#weather-forecast").text(wString);
+
+        var weatherTemp = data.list[0].main.temp;
+        $("#weather-temp").text(weatherTemp.toFixed(0) + "°F");
+
+        var weatherHumidity = data.list[0].main.humidity;
+        $("#weather-humidity").text(weatherHumidity + "%");
+
+        var windSpeed = data.list[0].wind.speed;
+        $("#weather-wind").text(windSpeed.toFixed(0) + " MPH")
+
+        var weatherImage;
+        $("#image").show(weatherImage);
+        switch (weatherImage) {
+            case (weatherCondition < 933):
+                ("src", "http://images.clipartpanda.com/rain-clip-art--rain-clipart-2.png")
+        }
     });
 });
