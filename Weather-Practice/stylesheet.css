@@ -3,36 +3,40 @@
     background-size: auto;
 
 }
-
-#heading{
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #d8e0ee;
-    font-size: 40px;
-    background-color: rgba(79, 68, 68, 0.50);
-    height: 50px;
-    width: 700px;
-    margin-left: 600px;
-    margin-right: 600px;
-    border-radius: 10px;
-}
 .main-weather{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     color: #d8e0ee;
-    background-color: rgba(79, 68, 68, 0.50);
-    height: 600px;
+    background-color: rgba(79, 68, 68, 0.60);
+    height: 700px;
     width: 700px;
     margin-left: 600px;
     margin-right: 600px;
     border-radius: 10px;
+    border:groove;
+    border-width: 10px;
+    padding: 45px 10px 35px 10px;
+    position: relative;
+    top: 55px;
+}
+#heading{
+    position: relative;
+    padding-bottom: 10px;
+    text-align:center;
+    bottom: 60px;
+    border: groove;
+    border-width: 5px;
+    border-top:hidden;
+    border-right:hidden;
+    border-left: hidden;
+    border-radius: 5px;
 }
 
 #weather-forecast{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     position:relative;
-    top: 290px;
+    top: 280px;
     
 }
 
@@ -40,28 +44,38 @@
     font-size: 120px;
     position: relative;
     left: 400px;
-    top: 70px;
+    bottom: 15px;
     
 }
 #icon-humidity{
     position: relative;
     right: 50px;
-    top: 150px;
+    top: 120px;
 }
 #weather-humidity{
     position: relative;
-    top:300px;
+    top:270px;
     left: 138px;
     font-size: 40px;
 }
 #icon-wind{
     position: relative;
-    bottom: 135px;
+    bottom: 165px;
     left: 330px;
 }
 #weather-wind{
     position: relative;
-    bottom: 7px;
+    bottom: 37px;
     left: 515px;
     font-size:40px;
+}
+#max-min{
+    font-size: 40px;
+    position:relative;
+    bottom: 420px;
+    text-align: center;
+    border-bottom:groove;
+    border-width: 5px;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }

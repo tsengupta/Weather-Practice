@@ -100,6 +100,10 @@
         var weatherTemp = data.list[0].main.temp;
         $("#weather-temp").text(weatherTemp.toFixed(0) + "°F");
 
+        var tempMax = data.list[0].main.temp_max;
+        var tempMin = data.list[0].main.temp_min;
+        $("#max-min").text(tempMax.toFixed(0) + "°/ " + tempMin.toFixed(0) + "°");
+
         var weatherHumidity = data.list[0].main.humidity;
         $("#weather-humidity").text(weatherHumidity + "%");
 
