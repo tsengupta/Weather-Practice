@@ -53,6 +53,7 @@
     position: relative;
     right: 20px;
     bottom: 10px;
+    -webkit-filter:invert(60%);
 }
 #weather-humidity{
     position: relative;
@@ -64,6 +65,7 @@
     position: relative;
     bottom: 320px;
     left: 310px;
+    -webkit-filter: invert(60%);
 }
 #weather-wind{
     position: relative;
