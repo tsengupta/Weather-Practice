@@ -110,11 +110,91 @@
         var windSpeed = data.list[0].wind.speed;
         $("#weather-wind").text(windSpeed.toFixed(0) + " MPH");
 
+        var weatherPics = {
+            "thunderstorms": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/thunderstorms-256.png"/>',
+            "drizzle": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/cloudy-256.png"/>',
+            "lightRain": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/lightshowers-256.png"/>',
+            "moderateRain": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/lightrain-256.png"/>',
+            "extremeRain": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/rain-256.png"/>',
+            "snow": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/lightsnow-256.png"/>',
+            "mist": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/lightfog-256.png"/>',
+            "fog": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/fog-256.png"/>',
+            "clearSky": '<img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/moon-full-256.png"/>',
+            "cloudy": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/cloud-256.png"/>',
+            "overcastClouds": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/705117-cloudy-256.png"/>',
+            "tornado": '<img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/hurricane-256.png"/>',
+            "hot": '<img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/Thermometer-100-256.png"/>',
+            "cold": '<img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/Thermometer-0-256.png"/>',
+            "windy": '<img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/wind1-256.png"/>',
+            "hail": '<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/hail-256.png"/>'
+
+        }
+
 
         switch (true) {
-            case (weatherCondition < 933):
-                $("#image").prepend('<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/thunderstorms-256.png"/>');
-
+            case (weatherCondition < 233):
+                $("#image").prepend(weatherPics.thunderstorms);
+                break;
+            case (weatherCondition < 323):
+                $("#image").prepend(weatherPics.drizzle);
+                break;
+            case (weatherCondition === 500):
+                $("#image").prepend(weatherPics.lightRain);
+                break;
+            case (weatherCondition === 501):
+                $("#image").prepend(weatherPics.moderateRain);
+                break;
+            case (weatherCondition < 532):
+                $("#image").prepend(weatherPics.extremeRain);
+                break;
+            case (weatherCondition < 623):
+                $("#image").prepend(weatherPics.snow);
+                break;
+            case (weatherCondition < 732):
+                $("#image").prepend(weatherPics.mist);
+                break;
+            case (weatherCondition < 772):
+                $("#image").prepend(weatherPics.fog);
+                break;
+            case (weatherCondition === 781):
+                $("#image").prepend(weatherPics.tornado);
+                break;
+            case (weatherCondition === 800):
+                $("#image").prepend(weatherPics.clearSky);
+                break;
+            case (weatherCondition < 803):
+                $("#image").prepend(weatherPics.cloudy);
+                break;
+            case (weatherCondition < 805):
+                $("#image").prepend(weatherPics.overcastClouds);
+                break;
+            case (weatherCondition < 903):
+                $("#image").prepend(weatherPics.tornado);
+                break;
+            case (weatherCondition === 903):
+                $("#image").prepend(weatherPics.cold);
+                break;
+            case (weatherCondition === 904):
+                $("#image").prepend(weatherPics.hot);
+                break;
+            case (weatherCondition === 905):
+                $("#image").prepend(weatherPics.windy);
+                break;
+            case (weatherCondition === 906):
+                $("#image").prepend(weatherPics.hail);
+                break;
+            case (weatherCondition === 951):
+                $("#image").prepend(weatherPics.clearSky);
+                break;
+            case (weatherCondition < 959):
+                $("#image").prepend(weatherPics.windy);
+                break;
+            case (weatherCondition < 962):
+                $("#image").prepend(weatherPics.thunderstorms);
+                break;
+            case (weatherCondition === 963):
+                $("#image").prepend(weatherPics.tornado);
+                break;
         }
     });
 });
