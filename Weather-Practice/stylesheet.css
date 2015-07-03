@@ -45,25 +45,25 @@
     font-size: 120px;
     float: right;
     position: relative;
-    top: 40px;
+    top: 27px;
     left: 40px;
 
 }
 #icon-humidity{
     position: relative;
-    right: 50px;
+    right: 20px;
     bottom: 10px;
 }
 #weather-humidity{
     position: relative;
     top:145px;
-    left: 138px;
+    left: 170px;
     font-size: 40px;
 }
 #icon-wind{
     position: relative;
-    bottom: 300px;
-    left: 330px;
+    bottom: 320px;
+    left: 310px;
 }
 #weather-wind{
     position: relative;
@@ -74,7 +74,7 @@
 #max-min{
     font-size: 40px;
     position:relative;
-    bottom: 550px;
+    bottom: 600px;
     text-align: center;
     border-bottom:groove;
     border-width: 5px;
@@ -85,6 +85,6 @@
     float:left;
     width: 50%;
     text-align: center;
-    margin-top:-70px;
-    margin-bottom:70px;
+    margin-top:-60px;
+    margin-bottom:60px;
 }
