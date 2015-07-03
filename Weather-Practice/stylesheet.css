@@ -35,47 +35,59 @@
 #weather-forecast{
     font-size: 50px;
     text-align: center;
-    position:relative;
+    clear:both;
     top: 280px;
     
 }
 
 #weather-temp{
+    width: 50%;
     font-size: 120px;
+    float: right;
     position: relative;
+    top: 40px;
+    left: 40px;
+    /* position: relative;
     left: 400px;
     bottom: 15px;
-    
+    */
 }
 #icon-humidity{
     position: relative;
     right: 50px;
-    top: 120px;
+    bottom: 10px;
 }
 #weather-humidity{
     position: relative;
-    top:270px;
+    top:145px;
     left: 138px;
     font-size: 40px;
 }
 #icon-wind{
     position: relative;
-    bottom: 165px;
+    bottom: 300px;
     left: 330px;
 }
 #weather-wind{
     position: relative;
-    bottom: 37px;
+    bottom: 164px;
     left: 515px;
     font-size:40px;
 }
 #max-min{
     font-size: 40px;
     position:relative;
-    bottom: 420px;
+    bottom: 550px;
     text-align: center;
     border-bottom:groove;
     border-width: 5px;
     border-radius: 5px;
     padding-bottom: 10px;
+}
+#image{
+    float:left;
+    width: 50%;
+    text-align: center;
+    margin-top:-70px;
+    margin-bottom:70px;
 }

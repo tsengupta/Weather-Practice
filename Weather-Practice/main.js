@@ -108,13 +108,13 @@
         $("#weather-humidity").text(weatherHumidity + "%");
 
         var windSpeed = data.list[0].wind.speed;
-        $("#weather-wind").text(windSpeed.toFixed(0) + " MPH")
+        $("#weather-wind").text(windSpeed.toFixed(0) + " MPH");
 
-        var weatherImage;
-        $("#image").show(weatherImage);
-        switch (weatherImage) {
+
+        switch (true) {
             case (weatherCondition < 933):
-                ("src", "http://images.clipartpanda.com/rain-clip-art--rain-clipart-2.png")
+                $("#image").prepend('<img src="https://cdn1.iconfinder.com/data/icons/lovely-weather-icons/32/thunderstorms-256.png"/>');
+
         }
     });
 });
