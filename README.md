@@ -2,7 +2,7 @@
 
 A neat little website a made in a week that forecasts the weather of Nashville using openweathermap.org API.
 
-**Hosted at:** http://cdn.rawgit.com/tsengupta/Weather-Practice/master/Weather-Practice/index.html.
+**Hosted at:** http://rawgit.com/tsengupta/Weather-Practice/master/Weather-Practice/index.html
 
 ***
 #### Preview of Site:
