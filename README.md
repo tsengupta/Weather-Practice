@@ -6,4 +6,4 @@ A neat little website a made in a week that forecasts the weather of Nashville u
 
 ***
 #### Preview of Site:
-![weather in nashville](https://cloud.githubusercontent.com/assets/12662684/8493260/64375210-211d-11e5-822d-80247d874673.PNG)
+![weather in nashville](https://cloud.githubusercontent.com/assets/12662684/8495696/02633f50-2135-11e5-9b54-d78c61e22102.PNG)
